@@ -8,6 +8,12 @@
 
 Never forget to write your readme! Also, don't forget to add codeclimate key to your github environment variables (as **CC_TEST_REPORTER_ID**) and to update the url here with the one provided by them!
 
+## How to Install
+
+```
+npm i boilerplate-base
+```
+
 ## License
 
 Licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License).
