@@ -5,5 +5,7 @@ describe('index.ts', () => {
 
 	it('should start things', () => {
 		require('../../src/index');
+
+		expect(jest.fn()).toHaveCallsLike();
 	});
 });
