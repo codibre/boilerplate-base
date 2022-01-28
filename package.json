@@ -56,7 +56,9 @@
       "./src/**/*.ts"
     ],
     "testEnvironment": "node",
-    "setupFilesAfterEnv": ["./test/jest-setup.ts"]
+    "setupFilesAfterEnv": [
+      "./test/jest-setup.ts"
+    ]
   },
   "directories": {
     "test": "test"
@@ -72,31 +74,31 @@
   "keywords": [],
   "license": "MIT",
   "devDependencies": {
-    "@codibre/confs": "1.0.1",
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/commit-analyzer": "^8.0.1",
-    "@semantic-release/git": "^9.0.0",
-    "@semantic-release/npm": "^7.1.0",
-    "@semantic-release/release-notes-generator": "^9.0.2",
-    "@types/jest": "^26.0.22",
-    "@types/semantic-release": "^17.2.0",
-    "@typescript-eslint/eslint-plugin": "^4.20.0",
-    "@typescript-eslint/parser": "^4.20.0",
-    "eslint": "^7.23.0",
-    "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-unused-imports": "^1.1.1",
-    "husky": "^6.0.0",
-    "jest": "^26.6.3",
+    "@codibre/confs": "1.1.0",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^9.0.0",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "@types/jest": "^27.4.0",
+    "@types/semantic-release": "^17.2.3",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^7.0.4",
+    "jest": "^27.4.7",
     "jest-callslike": "^0.2.0",
-    "jest-extended": "^0.11.5",
-    "prettier": "^2.2.1",
-    "semantic-release": "^17.4.2",
-    "ts-jest": "^26.5.4",
-    "ts-loader": "^8.1.0",
-    "ts-node": "^9.1.1",
-    "typedoc": "^0.20.34",
-    "typedoc-plugin-markdown": "^3.6.0",
-    "typescript": "^4.2.3"
+    "jest-extended": "^1.2.0",
+    "prettier": "^2.5.1",
+    "semantic-release": "^19.0.2",
+    "ts-jest": "^27.1.3",
+    "ts-loader": "^9.2.6",
+    "ts-node": "^10.4.0",
+    "typedoc": "^0.22.11",
+    "typedoc-plugin-markdown": "^3.11.12",
+    "typescript": "^4.5.5"
   }
 }
