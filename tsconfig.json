@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "rootDir": ".",
+    "baseUrl": ".",
     "strict": true,
     "module": "commonjs",
     "moduleResolution": "node",
@@ -10,14 +10,25 @@
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "importsNotUsedAsValues":"remove",
+    "importsNotUsedAsValues": "remove",
     "target": "es2020",
     "sourceMap": false,
     "outDir": "./dist",
     "noImplicitAny": true,
     "alwaysStrict": true,
+    "useUnknownInCatchVariables": false,
     "strictBindCallApply": true,
-    "strictFunctionTypes": true
-  },
-  "include": ["./src", "./test", "./*.js"]
+    "strictFunctionTypes": true,
+    "noUncheckedIndexedAccess": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "paths": {
+      "src/*": [
+        "./src/*"
+      ],
+      "test/*": [
+        "./test/*",
+      ]
+    }
+  }
 }
