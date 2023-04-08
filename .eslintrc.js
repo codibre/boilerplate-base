@@ -6,9 +6,8 @@ module.exports = {
 	},
 	overrides: [
 		{
-			files: ['test/*.ts', 'test/**/*.ts'],
+			files: ['test/**/*.ts', 'test/**/*.js'],
 			rules: {
-				'no-magic-numbers': 'off',
 				'@typescript-eslint/no-unused-expressions': 'off',
 				'@typescript-eslint/no-explicit-any': 'off',
 				'@typescript-eslint/no-non-null-assertion': 'off',
@@ -18,6 +17,13 @@ module.exports = {
 				'@typescript-eslint/no-unsafe-return': 'off',
 				'@typescript-eslint/no-explicit-any': 'off',
 				'@typescript-eslint/consistent-type-assertions': 'off',
+			},
+		},
+		{
+			files: ['test/**/*.ts'],
+			rules: {
+				'no-magic-numbers': 'off',
+				'@typescript-eslint/no-magic-numbers': 'off',
 			},
 		},
 	],
@@ -31,7 +37,7 @@ module.exports = {
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
-		project: ['tsconfig.json', 'tsconfig.test.json'],
+		project: ['tsconfig.json'],
 		sourceType: 'module',
 	},
 	plugins: ['@typescript-eslint', 'unused-imports'],
@@ -49,10 +55,13 @@ module.exports = {
 				},
 			},
 		],
-		'@typescript-eslint/no-explicit-any': 'off',
+		'no-return-await': 'off',
+		'@typescript-eslint/return-await': 'error',
+		'@typescript-eslint/no-floating-promises': 'error',
+		'@typescript-eslint/no-explicit-any': 'error',
 		'@typescript-eslint/no-empty-function': 'error',
 		'@typescript-eslint/no-unnecessary-type-assertion': 'error',
-		'@typescript-eslint/no-unused-expressions': 'off',
+		'@typescript-eslint/no-unused-expressions': 'error',
 		'@typescript-eslint/no-use-before-define': 'error',
 		'@typescript-eslint/quotes': [
 			'error',
@@ -93,10 +102,12 @@ module.exports = {
 		'no-fallthrough': 'error',
 		'no-invalid-regexp': 'error',
 		'no-invalid-this': 'off',
-		'no-magic-numbers': [
+		'no-magic-numbers': 'off',
+		'@typescript-eslint/no-magic-numbers': [
 			'error',
 			{
 				ignore: [0, 1, -1],
+				ignoreEnums: true,
 			},
 		],
 		'no-multiple-empty-lines': [
