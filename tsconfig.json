@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "rootDir": ".",
     "strict": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
+    "module": "Node16",
+    "moduleResolution": "Node16",
     "resolveJsonModule": true,
     "declaration": true,
     "strictNullChecks": true,
@@ -11,8 +12,8 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importsNotUsedAsValues": "remove",
-    "target": "es2020",
-    "sourceMap": false,
+    "target": "es2023",
+    "sourceMap": true,
     "outDir": "./dist",
     "noImplicitAny": true,
     "alwaysStrict": true,
@@ -22,6 +23,10 @@
     "noUncheckedIndexedAccess": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "allowJs": true,
+    "checkJs": true,
+    "declarationMap": true,
+    "pretty": true,
     "paths": {
       "src/*": [
         "./src/*"
@@ -30,5 +35,14 @@
         "./test/*",
       ]
     }
-  }
+  },
+  "include": [
+    "src",
+    "test",
+    ".jest.config.js",
+    "eslint.config.mjs"
+  ],
+  "exclude": [
+    "dist"
+  ]
 }

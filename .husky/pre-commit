@@ -1,6 +1,1 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
-npm run lint:fix
-git update-index --again
-npm test
+npx lint-staged

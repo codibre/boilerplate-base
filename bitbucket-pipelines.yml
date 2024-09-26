@@ -58,7 +58,7 @@ pipelines:
     - step: *scan-code
 
   branches:
-    master:
+    main:
       - step: *install-packages
       - parallel:
           - step: *build-application
