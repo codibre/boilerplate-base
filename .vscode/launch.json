@@ -4,46 +4,47 @@
 	// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
 	"version": "0.2.0",
 	"configurations": [
-			{
-				"type": "node",
-        "request": "launch",
-        "name": "Launch program",
-        "skipFiles": [
-            "<node_internals>/**"
-        ],
-				"cwd": "${workspaceRoot}",
-				"runtimeArgs": ["-r", "ts-node/register"],
-				"args": [
-          "${workspaceRoot}/src/index.ts"
-        ]
-			},
-      {
-        "type": "node",
-        "request": "launch",
-        "name": "Tests",
-        "skipFiles": ["<node_internals>/**"],
-        "cwd": "${workspaceRoot}",
-        "args": [
-          "-r", "ts-node/register",
-          "${workspaceRoot}/node_modules/jest/bin/jest",
-          "test/unit",
-          "--runInBand"
-        ],
-        "outputCapture": "std"
-      },
-      {
-        "type": "node",
-        "request": "launch",
-        "name": "Tests e2e",
-        "skipFiles": ["<node_internals>/**"],
-        "cwd": "${workspaceRoot}",
-        "args": [
-          "-r", "ts-node/register",
-          "${workspaceRoot}/node_modules/jest/bin/jest",
-          "test/e2e",
-          "--runInBand"
-        ],
-        "outputCapture": "std"
-      }
+    {
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceRoot}/node_modules/**/*get-intrinsic*/**",
+        "${workspaceRoot}/node_modules/**/avsc/**",
+        "${workspaceRoot}/node_modules/**/uuid/**",
+        "${workspaceRoot}/node_modules/**/get-intrinsic/**",
+        "${workspaceRoot}/node_modules/**/*jest*/**",
+        "${workspaceRoot}/node_modules/**/*nest*/**",
+        "${workspaceRoot}/node_modules/**/*mongodb*/**",
+        "${workspaceRoot}/node_modules/**/*whatwg*/**",
+        "${workspaceRoot}/node_modules/**/*kafka*/**",
+        "${workspaceRoot}/node_modules/**/augmentative-iterable/**",
+        "${workspaceRoot}/node_modules/**/fluent-iterable/**",
+        "${workspaceRoot}/node_modules/**/extension-methods/**"
+      ],
+      "command": "npm run start:dev",
+      "name": "Run npm start:dev",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+    {
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceRoot}/node_modules/**/*get-intrinsic*/**",
+        "${workspaceRoot}/node_modules/**/avsc/**",
+        "${workspaceRoot}/node_modules/**/uuid/**",
+        "${workspaceRoot}/node_modules/**/get-intrinsic/**",
+        "${workspaceRoot}/node_modules/**/*jest*/**",
+        "${workspaceRoot}/node_modules/**/*nest*/**",
+        "${workspaceRoot}/node_modules/**/*mongodb*/**",
+        "${workspaceRoot}/node_modules/**/*whatwg*/**",
+        "${workspaceRoot}/node_modules/**/*kafka*/**",
+        "${workspaceRoot}/node_modules/**/augmentative-iterable/**",
+        "${workspaceRoot}/node_modules/**/fluent-iterable/**",
+        "${workspaceRoot}/node_modules/**/extension-methods/**"
+      ],
+      "command": "npm run test:debug",
+      "name": "Run run test:debug",
+      "request": "launch",
+      "type": "node-terminal"
+    }
 	]
 }
