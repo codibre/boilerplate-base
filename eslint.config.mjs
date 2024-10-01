@@ -15,6 +15,7 @@ export default [
 			'templates/**/*',
 			'**/*.py',
 			'**/.eslintrc.js',
+      'coverage/**',
 		],
 	},
 	{
